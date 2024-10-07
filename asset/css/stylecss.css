@@ -50,6 +50,12 @@ header {
 
 .logo img {
     width: 50%;
+    transform: scale(1);
+    transition: ease 0.5s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
 }
 
 

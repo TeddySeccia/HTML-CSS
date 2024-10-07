@@ -2,6 +2,7 @@
 
 
 
+/* **************************************** HAUT*******************************/
 
 body {
     color: white;
@@ -72,6 +73,9 @@ h1 {
     font-size: 300%
 }
 
+/* ********************************************MILIEU**************************** */
+
+
 .intro {
     display: flex;
     text-align: center;
@@ -82,7 +86,7 @@ h1 {
     justify-content: space-around;
     margin-bottom: 10%;
     margin-top: 10%;
-    
+
 }
 
 
@@ -94,9 +98,8 @@ h1 {
     align-items: center;
     text-align: center;
     width: 25%;
-    
+
     border-radius: 30px 30px 30px 30px
-    
 }
 
 
@@ -108,11 +111,17 @@ h1 {
     align-items: center;
     text-align: center;
     width: 25%;
-    
-    border-radius: 30px 30px 30px 30px
+    border-radius: 30px 30px 30px 30px;
+
 }
 
+
+
+
+
+
 .presentation-javascript {
+
     border: solid yellow 3px;
     background-color: rgb(196, 196, 159);
     display: block;
@@ -120,31 +129,44 @@ h1 {
     text-align: center;
     width: 25%;
     height: 30%;
-    border-radius: 30px 30px 30px 30px
+    border-radius: 30px 30px 30px 30px;
+    transition: all 2s ease;
+
+}
+
+.presentation-javascript:hover {
+    
+    border: solid green 50px;
+    width: 50%;
+    height: 60%;
+
 }
 
 .image-schema-container {
     border: solid blue 2px;
     width: 100%;
-    height: 600px;          /* réglage précédent = height: 49%*/
+    height: 600px;
+
 }
+
+
 
 .image-schema-container img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-   
+
 }
 
 
 
-.titre-bloc{
+
+
+
+.titre-bloc {
     border: solid rgb(190, 190, 212) 2px;
     height: 80px;
 }
-
-
-
 
 
 
@@ -179,7 +201,14 @@ footer {
 
 .reseaux img {
     width: 50%;
+    transition: transform 2s;
 }
+
+.reseaux img:hover {
+
+    transform: rotate(360deg);
+}
+
 
 .reseaux a {
     display: flex;
@@ -192,30 +221,38 @@ footer {
 
 .contact {
     padding-top: 30px;
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.contact:hover {
+
+    transform: rotate(360deg);
 }
 
 
 @media screen and (max-width:768px) {
 
-  
-.presentation-log{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.presentation-html{
-    width: 75%;
-}
+    .presentation-log {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.presentation-css{
-    width: 75%;
-}
+    .presentation-html {
+        width: 75%;
+    }
 
-.presentation-javascript{
-    width: 75%;
-}
+    .presentation-css {
+        width: 75%;
+    }
+
+    .presentation-javascript {
+        width: 75%;
+    }
 
 
-    
+
 }
