@@ -1,11 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>C'est pas sorcier Accueil</title>
+    <link rel="stylesheet" href="../asset/css/stylecss.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="background">
+            <img src="../asset/img/fonddebaniere.png" alt="background">
+        </div>
+        <div>
+
+            <nav>
+                <ul class="headnav">
+                    <li>
+                        <div class="logo">
+                            <a href="../index.html"><img src="../asset/img/Accueil.png" alt="Accueil"></a>
+                        </div>
+
+
+                    </li>
+                    <li>
+                        <div class="logo">
+                            <a href="../pages/pagehtml.html"><img src="../asset/img/logohtml-removebg-preview.png"
+                                    alt="logo html"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="logo">
+                            <a href="../pages/pagecss.html"><img src="../asset/img/logocss-removebg-preview.png"
+                                    alt="logo css"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="logo">
+                            <a href="../pages/pagejavascript.html"><img src="../asset/img/logojs-removebg-preview.png"
+                                    alt="logo java script"></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="titre">
+                <h1>
+                    LE CODE FACILE POUR TA DARONNE
+                </h1>
+
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <main>
+        <section class="explication-container">
+            <h2>
+                CSS, L'apparence du site
+            </h2>
+
+            <div class="html-text">
+                <p>
+
+
+                    CSS, ou Cascading Style Sheets, est un langage de style utilisé pour définir l'apparence et la mise
+                    en forme des documents HTML. Il permet de séparer la structure du contenu (HTML) de sa présentation,
+                    offrant ainsi une flexibilité dans le design. Grâce à CSS, les développeurs peuvent contrôler divers
+                    aspects visuels, tels que les couleurs, les polices, les marges et les espacements.
+                    <br><br>
+                    Les styles sont appliqués à des éléments spécifiques ou à des groupes d'éléments à l'aide de
+                    sélecteurs, ce qui facilite la personnalisation de l'apparence de la page. CSS permet également de
+                    créer des mises en page responsives, adaptant le design à différentes tailles d'écran, ce qui est
+                    essentiel pour l'accessibilité sur les appareils mobiles.
+                    <br><br>
+                    Les animations et transitions ajoutent une dimension dynamique à l'interaction utilisateur, rendant
+                    les sites plus engageants. Les media queries permettent de définir des règles spécifiques pour
+                    différents appareils ou résolutions d'écran. CSS prend en charge des techniques avancées comme
+                    Flexbox et Grid pour une disposition sophistiquée des éléments.
+                    <br><br>
+                    De plus, CSS peut être intégré directement dans un document HTML ou lié via des feuilles de style
+                    externes, facilitant ainsi la gestion des styles sur plusieurs pages. En résumé, CSS est un outil
+                    fondamental pour le développement web, permettant de créer des interfaces attrayantes et
+                    fonctionnelles.
+                </p>
+            </div>
+        </section>
+        <section class="sémantique-container">
+            <h2>
+                Le fonctionnement de CSS
+            </h2>
+            <div class="semantique-text">
+                <div class="text-css-haut">
+                    <p>Les balises CSS, en réalité, ne sont pas des balises au sens HTML, mais plutôt des déclarations
+                        qui
+                        définissent le style des éléments HTML. Voici un aperçu de leur fonctionnement :
+
+                        Voici quelques éléments importants :
+                        <br><br>
+
+                        <h3>1. Bloc de déclaration : </h3>
+                        Les déclarations CSS sont regroupées dans des blocs de déclaration, délimités par des accolades
+                        {}. <br><br>
+
+                        <h3>2. Sélecteurs : </h3>
+                        Les sélecteurs ciblent les éléments HTML que tu souhaites styler. Ils peuvent être basés sur le
+                        type
+                        d'élément, les classes, les identifiants, ou d'autres attributs. <br><br>
+
+                        <strong>Type d'élément</strong> : &quot;p&quot; cible tous les paragraphes. <br>
+                        Exemple : p {color: blue;}
+                        <br><br>
+
+                        <strong>Classe</strong> : &quot;.xxx&quot; cible tous les éléments avec la classe "xxx". <br>
+                        Exemple : .xxx {font-size: 20px;}
+                        <br><br>
+
+                        <strong>Identifiant</strong> : &quot;#xxx&quot; cible l'élément avec l'ID UNIQUE "xxx". <br>
+                        Exemple : #xxx {background-color: yellow;}
+                        <br>
+                        <br>
+
+
+                        <h3>3. Propriétés et valeurs :</h3> <br>
+                        Chaque déclaration CSS est constituée de propriétés et de valeurs. La propriété définit ce qui
+                        sera
+                        stylisé, et la valeur indique comment. <br><br>
+
+                        Propriété : Ce qui doit être modifié (ex. color, font-size, margin). <br>
+                        Valeur : Comment cela doit être modifié (ex. red, 16px, 10px). <br><br>
+                        Exemple : <br>
+
+                    </p>
+                </div>
+                <div class="schema">
+                    <img src="../asset/img/structurecss.jpg" alt="structure css"> <br><br>
+
+
+                </div>
+                <div class="text-css-bas">
+                    <p>
+
+                        <h3>4. Héritage :</h3>
+                        Certaines propriétés CSS héritent des valeurs de leurs éléments parents. Par exemple, si tu
+                        définis
+                        une couleur de texte sur le &lt;body&gt;, tous les éléments à l'intérieur hériteront de cette
+                        couleur, sauf si une autre couleur
+                        est
+                        spécifiée.
+                        <br><br>
+
+                        <h3>5. Cascade et spécificité :</h3>
+                        CSS signifie "Cascading Style Sheets", ce qui indique que les styles peuvent s'accumuler et être
+                        écrasés selon la spécificité et l'ordre des règles. Plus un sélecteur est spécifique, plus il a
+                        de poids. <br><br>
+                        La cascade suis cet ordre : 
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div>
+                <img src="../asset/img/cascade.png" alt="schema de semantique html">
+            </div>
+
+        </section>
+        <section class="exemple-container">
+            <div class="exemple-haut-container">
+                <h2>
+                    Concrètement ça donne quoi?
+                </h2>
+            </div>
+
+            <div class="exemple-haut-text-container">
+                <p>Quand on rentre le html puis le css du milieu, on se retrouve avec le rendu de la dernière image.</p>
+            </div>
+            <div class="tryit-container">
+                <div class="frametext-container">
+                    <img src="../asset/img/csstry1.png" alt="code html">
+                </div>
+                <div class="frametext-container">
+                    <img src="../asset/img/csstry2.png" alt="">
+
+                </div>
+                <div class="frame-container">
+                    <img src="../asset/img/csstry3.png" alt="rendu html">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="contact">
+                <a href="../pages/contact.html"><img src="../asset/img/contact.png" alt=""></a>
+            </div>
+            <div class="reseaux">
+                <a href="https://www.facebook.com"><img src="../asset/img/logofacebook.png" alt="logo facebook"></a>
+                <a href="https://www.twitter.com"><img src="../asset/img/logotwitter.png" alt="logo twitter"></a>
+                <a href="https://www.instagram.com"><img src="../asset/img/logoinsta.png" alt="logo insta"></a>
+                <a href="https://www.youtube.com"><img src="../asset/img/logoyoutube.png" alt="logo youtube"></a>
+            </div>
+            <div class="copyright">
+                <a href="">Copyright Ted</a>
+            </div>
+        </div>
+
+
+    </footer>
+
 </body>
+
 </html>

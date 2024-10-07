@@ -11,7 +11,7 @@ body {
 
 
 .background {
-    position:fixed;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: -99;
@@ -48,14 +48,14 @@ header {
     padding: 0;
 }
 
-.logo img{
+.logo img {
     width: 50%;
     transform: scale(1);
     transition: ease 0.5s;
 }
 
-.logo img:hover{
- transform: scale(1.2);
+.logo img:hover {
+    transform: scale(1.2);
 }
 
 
@@ -65,7 +65,9 @@ header {
 h1 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
+
 h1 {
     font-size: 300%
 }
@@ -75,15 +77,16 @@ h1 {
     text-align: center;
 }
 
-.presentation-log{
+.presentation-log {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10%;
     margin-top: 10%;
+    
 }
 
 
-.presentation-html{
+.presentation-html {
     border: solid orangered 3px;
     border-radius: 10%;
     background-color: rgb(182, 153, 153);
@@ -91,10 +94,13 @@ h1 {
     align-items: center;
     text-align: center;
     width: 25%;
+    
     border-radius: 30px 30px 30px 30px
+    
 }
 
-.presentation-css{
+
+.presentation-css {
     border: solid blue 3px;
     border-radius: 10%;
     background-color: rgb(165, 165, 227);
@@ -102,26 +108,39 @@ h1 {
     align-items: center;
     text-align: center;
     width: 25%;
+    
     border-radius: 30px 30px 30px 30px
 }
 
-.presentation-javascript{
+.presentation-javascript {
     border: solid yellow 3px;
     background-color: rgb(196, 196, 159);
     display: block;
     align-items: center;
     text-align: center;
-    width: 25%;  
+    width: 25%;
+    height: 30%;
     border-radius: 30px 30px 30px 30px
 }
 
-.image-schema-container{
+.image-schema-container {
+    border: solid blue 2px;
     width: 100%;
-    height: 49%;
+    height: 600px;          /* réglage précédent = height: 49%*/
 }
 
-.image-schema-container img{
+.image-schema-container img {
     height: 100%;
+    width: 100%;
+    object-fit: contain;
+   
+}
+
+
+
+.titre-bloc{
+    border: solid rgb(190, 190, 212) 2px;
+    height: 80px;
 }
 
 
@@ -136,7 +155,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: white;
-    border-radius: 30px 30px 30px 30px ;
+    border-radius: 30px 30px 30px 30px;
     opacity: 70%;
 
 
@@ -175,3 +194,28 @@ footer {
     padding-top: 30px;
 }
 
+
+@media screen and (max-width:768px) {
+
+  
+.presentation-log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation-html{
+    width: 75%;
+}
+
+.presentation-css{
+    width: 75%;
+}
+
+.presentation-javascript{
+    width: 75%;
+}
+
+
+    
+}
